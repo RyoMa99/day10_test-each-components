@@ -1,5 +1,5 @@
 {
-  "name": "day7",
+  "name": "day10",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,11 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint -no-fix",
+    "lint": "vue-cli-service lint --no-fix",
     "lint:fix": "vue-cli-service lint"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "yarn run lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -41,6 +44,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "simple-git-hooks": "^2.5.1",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
   }
